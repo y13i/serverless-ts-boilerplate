@@ -1,0 +1,27 @@
+service: serverless-ts-boilerplate
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: ${env:AWS_REGION}
+  memorySize: 256
+  # # Stage name
+  # stage: staging
+  # # Global environment variables
+  # environment:
+  #   MyGlobalEnv: MyGlobalEnvValue
+  # # Additional IAM Permissions
+  # iamRoleStatements:
+  # - Effect: Allow
+  #   Action:
+  #   - ec2:DescribeInstances
+  #   Resource: "*"
+plugins:
+- serverless-webpack
+functions:
+  hello:
+    handler: hello.default
+    events:
+    - http: GET hello
+    # # Function specific environment variables
+    # environment:
+    #   MyPerFunctionEnv: foo
