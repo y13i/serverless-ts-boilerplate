@@ -27,7 +27,7 @@
     "stripInternal": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": false,
-    "pretty": false,
+    "pretty": true,
     "noEmitOnError": true
   },
   "exclude": [
