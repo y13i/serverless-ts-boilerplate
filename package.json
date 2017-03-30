@@ -1,6 +1,6 @@
 {
   "name": "serverless-ts-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Boilerplate for TypeScipt + Serverless Framework.",
   "scripts": {
     "deploy": "serverless deploy",
