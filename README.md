@@ -1,6 +1,6 @@
 # serverless-ts-boilerplate
 
-Example project built with [TypeScript](https://www.typescriptlang.org/), [Serverless Framework](https://serverless.com/framework/), [Webpack](https://webpack.github.io/), [TSLint](https://palantir.github.io/tslint/), [Source Map Support](https://github.com/evanw/node-source-map-support) and [Apex.js](https://github.com/apex/node-apex).
+Example project built with [TypeScript](https://www.typescriptlang.org/), [Serverless Framework](https://serverless.com/framework/), [Webpack](https://webpack.github.io/), [TSLint](https://palantir.github.io/tslint/) and [Source Map Support](https://github.com/evanw/node-source-map-support).
 
 ## Usage
 
@@ -47,10 +47,16 @@ Raise some error.
 $ curl -s "https://${API_ID}.execute-api.${AWS_REGION}.amazonaws.com/dev/hello?yourName=Voldemort" | jq
 ```
 
-Confirm sourcemap works (You can also review errors in CloudWatch Logs).
+Confirm sourcemap works.
 
 ```
 $ node_modules/.bin/serverless invoke --function hello --data '{"queryStringParameters": {"yourName": "Voldemort"}}'
+```
+
+You can also review errors in CloudWatch Logs by using `serverless logs` command.
+
+```
+$ yarn run serverless -- logs --function hello
 ```
 
 Remove resources.
