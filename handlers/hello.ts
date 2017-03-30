@@ -1,19 +1,26 @@
 import {install} from 'source-map-support';
 install();
 
-import {APIGatewayEvent, Context} from 'aws-lambda';
+import {APIGatewayEvent, Context, Callback} from 'aws-lambda';
 
 import Greeter from '../lib/greeter';
 
-export default async function hello(event: APIGatewayEvent, _context: Context) {
-  const params = event.queryStringParameters || {};
+export default async function hello(event: APIGatewayEvent, context: Context, callback: Callback): Promise<void> {
+  try {
+    console.log({event, context});
 
-  const greeter = new Greeter(params.name);
-  const message = greeter.greet(params.yourName);
+    const params = event.queryStringParameters || {};
 
-  return {
-    statusCode: 200,
-    headers:    {},
-    body:       JSON.stringify({message}),
-  };
+    const greeter = new Greeter(params.name);
+    const message = greeter.greet(params.yourName);
+
+    callback(undefined, {
+      statusCode: 200,
+      headers:    {},
+      body:       JSON.stringify({message}),
+    });
+  } catch (ex) {
+    console.error(ex);
+    callback(ex);
+  }
 }
