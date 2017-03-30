@@ -1,10 +1,9 @@
-var path    = require('path');
-var glob    = require('glob');
-// var webpack = require('webpack');
+const path = require('path');
+const glob = require('glob');
 
 module.exports = {
-  entry: glob.sync('./handlers/*.ts').reduce(function(acc, item) {
-    var obj = {};
+  entry: glob.sync('./handlers/*.ts').reduce((acc, item) => {
+    const obj = {};
     obj[path.basename(item, '.ts')] = item;
     return Object.assign(acc, obj);
   }, {}),
@@ -35,10 +34,6 @@ module.exports = {
       '',
     ],
   },
-
-  // plugins: [
-  //   new webpack.optimize.UglifyJsPlugin(),
-  // ],
 
   output: {
     libraryTarget: 'commonjs',
