@@ -3,7 +3,7 @@ var glob    = require('glob');
 // var webpack = require('webpack');
 
 module.exports = {
-  entry: glob.sync('./functions/*.ts').reduce(function(acc, item) {
+  entry: glob.sync('./handlers/*.ts').reduce(function(acc, item) {
     var obj = {};
     obj[path.basename(item, '.ts')] = item;
     return Object.assign(acc, obj);
