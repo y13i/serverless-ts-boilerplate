@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/y13i/serverless-ts-boilerplate",
   "devDependencies": {
-    "@types/aws-lambda": "^0.0.10",
     "@types/source-map-support": "^0.2.28",
+    "@y13i/apex.js": "^2.0.1",
     "json-loader": "^0.5.4",
     "serverless": "^1.12.1",
     "serverless-webpack": "^1.0.0-rc.3",
