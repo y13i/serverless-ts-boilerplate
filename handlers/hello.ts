@@ -1,9 +1,9 @@
-import {install} from 'source-map-support';
+import {install} from "source-map-support";
 install();
 
-import {APIGatewayEvent, Context, Callback} from 'aws-lambda';
+import {APIGatewayEvent, Context, Callback} from "aws-lambda";
 
-import Greeter from '../lib/greeter';
+import Greeter from "../lib/greeter";
 
 export default async function hello(event: APIGatewayEvent, context: Context, callback: Callback): Promise<void> {
   try {

@@ -1,40 +1,40 @@
 // Some of Webpack 2 syntaxes is not supported by serverless-webpack@1.0.0-rc.3
 // See https://github.com/elastic-coders/serverless-webpack/issues/113
 
-const path = require('path');
-const glob = require('glob');
+const path = require("path");
+const glob = require("glob");
 
 module.exports = {
-  entry: glob.sync('./handlers/*.ts').reduce((acc, item) => {
+  entry: glob.sync("./handlers/*.ts").reduce((acc, item) => {
     const obj = {};
-    obj[path.basename(item, '.ts')] = item;
+    obj[path.basename(item, ".ts")] = item;
     return Object.assign(acc, obj);
   }, {}),
 
-  target:  'node',
-  devtool: 'source-map',
+  target:  "node",
+  devtool: "source-map",
 
   module: {
     loaders: [
       {
         test:   /\.tsx?$/,
-        loader: 'ts-loader',
+        loader: "ts-loader",
       },
 
       {
         test:   /\.json$/,
-        loader: 'json-loader',
+        loader: "json-loader",
       },
     ],
   },
 
   resolve: {
     extensions: [
-      '.ts',
-      '.js',
-      '.tsx',
-      '.jsx',
-      '',
+      ".ts",
+      ".js",
+      ".tsx",
+      ".jsx",
+      "",
     ],
   },
 
