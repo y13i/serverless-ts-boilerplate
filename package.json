@@ -21,15 +21,15 @@
   },
   "homepage": "https://github.com/y13i/serverless-ts-boilerplate",
   "devDependencies": {
-    "@types/aws-lambda": "^0.0.9",
+    "@types/aws-lambda": "^0.0.10",
     "@types/source-map-support": "^0.2.28",
     "json-loader": "^0.5.4",
-    "serverless": "^1.10.0",
+    "serverless": "^1.12.1",
     "serverless-webpack": "^1.0.0-rc.3",
-    "source-map-support": "^0.4.14",
+    "source-map-support": "^0.4.15",
     "ts-loader": "^2.0.3",
-    "tslint": "^5.0.0",
-    "typescript": "^2.2.2",
-    "webpack": "^2.3.2"
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1"
   }
 }
