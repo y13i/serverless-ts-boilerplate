@@ -2,11 +2,11 @@ import {install} from "source-map-support";
 install();
 
 import * as λ from "@y13i/apex.js";
-import {APIGatewayEvent, Context} from "aws-lambda";
+import {APIGatewayEvent} from "aws-lambda";
 
 import Greeter from "../lib/greeter";
 
-export default λ(async (event: APIGatewayEvent, _context: Context) => {
+export default λ(async (event: APIGatewayEvent) => {
   const params  = event.queryStringParameters || {};
   const greeter = new Greeter(params.name);
   const message = greeter.greet(params.yourName);
