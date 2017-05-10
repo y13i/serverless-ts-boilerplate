@@ -1,6 +1,4 @@
-import {install} from "source-map-support";
-install();
-
+import "source-map-support/register";
 import * as λ from "@y13i/apex.js";
 import {APIGatewayEvent} from "aws-lambda";
 
