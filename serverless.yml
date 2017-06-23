@@ -21,7 +21,9 @@ functions:
   hello:
     handler: hello.default
     events:
-    - http: GET hello
+    - http:
+        path: hello
+        method: get
     # # Function specific environment variables
     # environment:
     #   MyPerFunctionEnv: foo
