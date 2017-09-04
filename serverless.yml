@@ -19,7 +19,7 @@ plugins:
 - serverless-webpack
 functions:
   hello:
-    handler: handler.hello
+    handler: entry.hello
     events:
     - http:
         path: hello

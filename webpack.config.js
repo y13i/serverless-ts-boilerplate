@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry:   "./handler.ts",
+  entry:   "./entry.ts",
   target:  "node",
   devtool: "source-map",
 
@@ -26,6 +26,6 @@ module.exports = {
   output: {
     libraryTarget: "commonjs",
     path:          path.join(__dirname, "dist"),
-    filename:      "handler.js",
+    filename:      "entry.js",
   },
 };
