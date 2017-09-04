@@ -3,7 +3,7 @@ provider:
   name: aws
   runtime: nodejs6.10
   region: ${env:AWS_REGION}
-  memorySize: 256
+  memorySize: 128
   # # Stage name
   # stage: staging
   # # Global environment variables
@@ -19,7 +19,7 @@ plugins:
 - serverless-webpack
 functions:
   hello:
-    handler: hello.default
+    handler: handler.hello
     events:
     - http:
         path: hello
