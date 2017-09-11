@@ -7,7 +7,7 @@ Example project built with [TypeScript](https://www.typescriptlang.org/), [Serve
 Clone the repo.
 
 ```
-$ git clone git@github.com/y13i/serverless-ts-boilerplate.git
+$ git clone git@github.com:y13i/serverless-ts-boilerplate.git
 ```
 
 Install dependencies.
