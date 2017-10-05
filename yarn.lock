@@ -29,8 +29,8 @@
     "@types/node" "*"
 
 "@y13i/apex.js@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@y13i/apex.js/-/apex.js-2.0.1.tgz#a61f43c9f69b16fb1212a50b50a449aae9605b42"
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@y13i/apex.js/-/apex.js-2.0.2.tgz#e4c19567a7a094d0cee431994b610df16bbf38a0"
   dependencies:
     "@types/aws-lambda" "*"
 
@@ -127,9 +127,9 @@ anymatch@^1.3.0:
     arrify "^1.0.0"
     micromatch "^2.1.5"
 
-apollo-client@^1.4.2:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-1.9.2.tgz#a95b38ca846e881bba1b59b0e3fbf82abfd7f23d"
+apollo-client@^1.9.2:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-1.9.3.tgz#37000b3c801f4571b7b089739e696a158896aeab"
   dependencies:
     apollo-link-core "^0.5.0"
     graphql "^0.10.0"
@@ -267,17 +267,18 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-aws-sdk@^2.7.13:
-  version "2.49.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.49.0.tgz#e340451b38b9772b2320da64a2cc272410667c69"
+aws-sdk@^2.75.0:
+  version "2.127.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.127.0.tgz#3d70e8f868c234a212f7b62d5a0452561a63b4dc"
   dependencies:
-    buffer "5.0.6"
+    buffer "4.9.1"
     crypto-browserify "1.0.9"
+    events "^1.1.1"
     jmespath "0.15.0"
     querystring "0.2.0"
     sax "1.2.1"
     url "0.10.3"
-    uuid "3.0.1"
+    uuid "3.1.0"
     xml2js "0.4.17"
     xmlbuilder "4.2.1"
 
@@ -446,26 +447,19 @@ buffer-xor@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/buffer-xor/-/buffer-xor-1.0.3.tgz#26e61ed1422fb70dd42e6e36729ed51d855fe8d9"
 
-buffer@5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.0.6.tgz#2ea669f7eec0b6eda05b08f8b5ff661b28573588"
+buffer@4.9.1, buffer@^4.3.0:
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-4.9.1.tgz#6d1bb601b07a4efced97094132093027c95bc298"
   dependencies:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
+    isarray "^1.0.0"
 
 buffer@^3.0.1:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-3.6.0.tgz#a72c936f77b96bf52f5f7e7b467180628551defb"
   dependencies:
     base64-js "0.0.8"
-    ieee754 "^1.1.4"
-    isarray "^1.0.0"
-
-buffer@^4.3.0:
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-4.9.1.tgz#6d1bb601b07a4efced97094132093027c95bc298"
-  dependencies:
-    base64-js "^1.0.2"
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
@@ -544,9 +538,9 @@ chokidar@^1.7.0:
   optionalDependencies:
     fsevents "^1.0.0"
 
-ci-info@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.0.0.tgz#dc5285f2b4e251821683681c381c3388f46ec534"
+ci-info@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.1.1.tgz#47b44df118c48d2597b56d342e7e25791060171a"
 
 cipher-base@^1.0.0, cipher-base@^1.0.1:
   version "1.0.3"
@@ -1067,7 +1061,7 @@ event-emitter@~0.3.5:
     d "1"
     es5-ext "~0.10.14"
 
-events@^1.0.0:
+events@^1.0.0, events@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
@@ -2043,6 +2037,10 @@ node-fetch@^1.0.1, node-fetch@^1.6.0:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
+node-forge@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.1.tgz#9da611ea08982f4b94206b3beb4cc9665f20c300"
+
 node-libs-browser@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/node-libs-browser/-/node-libs-browser-2.0.0.tgz#a3a59ec97024985b46e958379646f96c4b616646"
@@ -2635,8 +2633,8 @@ serve-static@1.12.1:
     send "0.15.1"
 
 serverless-webpack@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-2.2.2.tgz#a2029f2fdc4ce8ba52cc4d3788da254b6efac604"
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-2.2.3.tgz#07dab8169eb2aaaeac68e98feafd4ab65b72c7d3"
   dependencies:
     bluebird "^3.4.0"
     body-parser "^1.15.2"
@@ -2648,17 +2646,17 @@ serverless-webpack@^2.2.2:
     ts-node "^3.2.0"
 
 serverless@^1.21.0:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.21.0.tgz#f651c2d71273c28d83457a242226f48cda5bcfef"
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.23.0.tgz#c4063f2ffee5748d2db0d02d585e7869fca80c34"
   dependencies:
     "@serverless/fdk" "^0.5.1"
-    apollo-client "^1.4.2"
+    apollo-client "^1.9.2"
     archiver "^1.1.0"
     async "^1.5.2"
-    aws-sdk "^2.7.13"
+    aws-sdk "^2.75.0"
     bluebird "^3.4.0"
     chalk "^2.0.0"
-    ci-info "^1.0.0"
+    ci-info "^1.1.1"
     download "^5.0.2"
     filesize "^3.3.0"
     fs-extra "^0.26.7"
@@ -2676,6 +2674,7 @@ serverless@^1.21.0:
     minimist "^1.2.0"
     moment "^2.13.0"
     node-fetch "^1.6.0"
+    node-forge "^0.7.1"
     opn "^5.0.0"
     raven "^1.2.1"
     rc "^1.1.6"
@@ -2686,6 +2685,7 @@ serverless@^1.21.0:
     tabtab "^2.2.2"
     uuid "^2.0.2"
     write-file-atomic "^2.1.0"
+    yaml-ast-parser "0.0.34"
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
@@ -2741,9 +2741,15 @@ source-list-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.0.tgz#aaa47403f7b245a92fbc97ea08f250d6087ed085"
 
-source-map-support@^0.4.0, source-map-support@^0.4.17:
+source-map-support@^0.4.0:
   version "0.4.17"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.17.tgz#6f2150553e6375375d0ccb3180502b78c18ba430"
+  dependencies:
+    source-map "^0.5.6"
+
+source-map-support@^0.4.17:
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
   dependencies:
     source-map "^0.5.6"
 
@@ -2994,8 +3000,8 @@ trim-repeated@^1.0.0:
     escape-string-regexp "^1.0.2"
 
 ts-loader@^2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-2.3.4.tgz#904f82f6812406f3f073c1c114eea2759e27f80a"
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-2.3.7.tgz#a9028ced473bee12f28a75f9c5b139979d33f2fc"
   dependencies:
     chalk "^2.0.1"
     enhanced-resolve "^3.0.0"
@@ -3079,8 +3085,8 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
 typescript@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.2.tgz#038a95f7d9bbb420b1bf35ba31d4c5c1dd3ffe34"
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.3.tgz#df3dcdc38f3beb800d4bc322646b04a3f6ca7f0d"
 
 uglify-js@^2.8.29:
   version "2.8.29"
@@ -3177,13 +3183,17 @@ uuid@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.0.tgz#6728fc0459c450d796a99c31837569bdf672d728"
 
-uuid@3.0.1, uuid@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
+uuid@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
 uuid@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
+
+uuid@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
 
 v8flags@^3.0.0:
   version "3.0.0"
@@ -3234,8 +3244,8 @@ webpack-sources@^1.0.1:
     source-map "~0.5.3"
 
 webpack@^3.5.5:
-  version "3.5.5"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.5.5.tgz#3226f09fc8b3e435ff781e7af34f82b68b26996c"
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.6.0.tgz#a89a929fbee205d35a4fa2cc487be9cbec8898bc"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
@@ -3331,6 +3341,10 @@ y18n@^3.2.1:
 yallist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
+
+yaml-ast-parser@0.0.34:
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.34.tgz#d00f3cf9d773b7241409ae92a6740d1db19f49e6"
 
 yargs-parser@^7.0.0:
   version "7.0.0"
