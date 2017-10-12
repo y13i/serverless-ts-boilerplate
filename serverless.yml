@@ -17,6 +17,7 @@ provider:
   #   Resource: "*"
 plugins:
 - serverless-webpack
+- serverless-offline
 functions:
   hello:
     handler: entry.hello
