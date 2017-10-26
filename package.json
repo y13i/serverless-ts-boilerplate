@@ -26,11 +26,13 @@
     "serverless": "^1.21.0",
     "serverless-offline": "^3.16.0",
     "serverless-webpack": "^3.1.2",
-    "source-map-support": "^0.5.0",
     "ts-loader": "^3.1.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
     "webpack": "^3.5.5",
     "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.0"
   }
 }
