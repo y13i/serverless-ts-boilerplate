@@ -18,6 +18,8 @@ provider:
 plugins:
 - serverless-webpack
 - serverless-offline
+custom:
+  webpackIncludeModules: true
 functions:
   hello:
     handler: entry.hello
