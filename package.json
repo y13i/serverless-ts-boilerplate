@@ -25,9 +25,9 @@
     "@y13i/apex.js": "^2.0.1",
     "serverless": "^1.21.0",
     "serverless-offline": "^3.16.0",
-    "serverless-webpack": "^2.2.2",
-    "source-map-support": "^0.4.17",
-    "ts-loader": "^2.3.4",
+    "serverless-webpack": "^3.1.2",
+    "source-map-support": "^0.5.0",
+    "ts-loader": "^3.0.5",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
     "webpack": "^3.5.5"
