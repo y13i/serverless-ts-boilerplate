@@ -3,9 +3,10 @@ const slsw = require("serverless-webpack");
 const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
-  entry:   slsw.lib.entries,
-  target:  "node",
-  devtool: "source-map",
+  entry:     slsw.lib.entries,
+  target:    "node",
+  devtool:   "source-map",
+  externals: [nodeExternals()],
 
   module: {
     rules: [
@@ -27,7 +28,7 @@ module.exports = {
 
   output: {
     libraryTarget: "commonjs",
-    path:          path.join(__dirname, "dist"),
+    path:          path.join(__dirname, "dist", "lambda"),
     filename:      "[name].js",
   },
 };
