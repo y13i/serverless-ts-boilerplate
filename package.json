@@ -22,7 +22,6 @@
   "homepage": "https://github.com/y13i/serverless-ts-boilerplate",
   "devDependencies": {
     "@types/source-map-support": "^0.4.0",
-    "@y13i/apex.js": "^2.0.1",
     "serverless": "^1.21.0",
     "serverless-offline": "^3.16.0",
     "serverless-webpack": "^3.1.2",
@@ -33,6 +32,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
+    "@y13i/apex.js": "^2.0.2",
     "source-map-support": "^0.5.0"
   }
 }
