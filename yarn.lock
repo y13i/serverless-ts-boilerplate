@@ -10,7 +10,7 @@
     ramda "^0.24.1"
     url-parse "^1.1.9"
 
-"@types/aws-lambda@*":
+"@types/aws-lambda@^0.0.19":
   version "0.0.19"
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.19.tgz#b3da87f673e8ef0af65dd172d8c7a40527e1954d"
 
@@ -27,12 +27,6 @@
   resolved "https://registry.yarnpkg.com/@types/source-map-support/-/source-map-support-0.4.0.tgz#a62a1866614af68c888173c001481f242aaf148b"
   dependencies:
     "@types/node" "*"
-
-"@y13i/apex.js@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@y13i/apex.js/-/apex.js-2.0.2.tgz#e4c19567a7a094d0cee431994b610df16bbf38a0"
-  dependencies:
-    "@types/aws-lambda" "*"
 
 abbrev@1:
   version "1.1.0"
@@ -1075,6 +1069,12 @@ d@1:
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
   dependencies:
     es5-ext "^0.10.9"
+
+dalamb@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/dalamb/-/dalamb-0.0.3.tgz#4b80685e4abc8e6110c01e3476550c195fd7d99f"
+  dependencies:
+    "@types/aws-lambda" "^0.0.19"
 
 dashdash@^1.12.0:
   version "1.14.1"

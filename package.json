@@ -32,7 +32,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "@y13i/apex.js": "^2.0.2",
+    "dalamb": "^0.0.3",
     "source-map-support": "^0.5.0"
   }
 }
