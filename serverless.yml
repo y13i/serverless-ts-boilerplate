@@ -22,7 +22,7 @@ custom:
   webpackIncludeModules: true
 functions:
   hello:
-    handler: entry.hello
+    handler: handlers/hello.default
     events:
     - http:
         path: hello
