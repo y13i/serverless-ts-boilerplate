@@ -21,11 +21,11 @@ plugins:
 custom:
   webpackIncludeModules: true
 functions:
-  hello:
-    handler: handlers/hello.default
+  diceRoll:
+    handler: handlers/diceRoll.default
     events:
     - http:
-        path: hello
+        path: diceRoll
         method: get
     # # Function specific environment variables
     # environment:

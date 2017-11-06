@@ -1,6 +1,6 @@
 # serverless-ts-boilerplate
 
-Example project built with [TypeScript](https://www.typescriptlang.org/), [Serverless Framework](https://serverless.com/framework/), [Webpack](https://webpack.github.io/), [TSLint](https://palantir.github.io/tslint/) and [Source Map Support](https://github.com/evanw/node-source-map-support).
+Example project built with [TypeScript](https://www.typescriptlang.org/), [Serverless Framework](https://serverless.com/framework/), [Webpack](https://webpack.github.io/), [TSLint](https://palantir.github.io/tslint/), [Source Map Support](https://github.com/evanw/node-source-map-support) and [Dalamb](https://github.com/y13i/dalamb).
 
 ## Usage
 
@@ -32,31 +32,31 @@ $ yarn run deploy
 Try HTTP request.
 
 ```
-$ curl -s "https://${API_ID}.execute-api.${AWS_REGION}.amazonaws.com/dev/hello" | jq
+$ curl -s "https://${API_ID}.execute-api.${AWS_REGION}.amazonaws.com/dev/diceRoll" | jq
 ```
 
 With some parameters.
 
 ```
-$ curl -s "https://${API_ID}.execute-api.${AWS_REGION}.amazonaws.com/dev/hello?name=Donald&yourName=Hillary" | jq
+$ curl -s "https://${API_ID}.execute-api.${AWS_REGION}.amazonaws.com/dev/diceRoll?faces=4&quantity=4" | jq
 ```
 
 Raise some error.
 
 ```
-$ curl -s "https://${API_ID}.execute-api.${AWS_REGION}.amazonaws.com/dev/hello?yourName=Voldemort" | jq
+$ curl -s "https://${API_ID}.execute-api.${AWS_REGION}.amazonaws.com/dev/diceRoll?faces=7" | jq
 ```
 
 Confirm sourcemap works.
 
 ```
-$ node_modules/.bin/serverless invoke --function hello --data '{"queryStringParameters": {"yourName": "Voldemort"}}'
+$ yarn run serverless invoke --function diceRoll --data '{"queryStringParameters": {"faces": "7"}}'
 ```
 
 You can also review errors in CloudWatch Logs by using `serverless logs` command.
 
 ```
-$ yarn run serverless -- logs --function hello
+$ yarn run serverless logs --function diceRoll
 ```
 
 Remove resources.
