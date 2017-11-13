@@ -1070,9 +1070,9 @@ d@1:
   dependencies:
     es5-ext "^0.10.9"
 
-dalamb@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/dalamb/-/dalamb-0.0.3.tgz#4b80685e4abc8e6110c01e3476550c195fd7d99f"
+dalamb@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/dalamb/-/dalamb-0.1.1.tgz#ca3eaea371a5d43ad68fbd7ed0a43a78e632588f"
   dependencies:
     "@types/aws-lambda" "^0.0.19"
 
@@ -3418,9 +3418,9 @@ serverless-webpack@^4.0.0:
     semver "^5.4.1"
     ts-node "^3.2.0"
 
-serverless@^1.24.0:
-  version "1.24.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.24.0.tgz#67dad5f03a5511d635893337a3e8c1490cb8b257"
+serverless@^1.24.1:
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.24.1.tgz#dd092a186d404dc9e48151d1f7cc2df7d270355a"
   dependencies:
     "@serverless/fdk" "^0.5.1"
     apollo-client "^1.9.2"

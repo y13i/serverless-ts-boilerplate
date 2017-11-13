@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/source-map-support": "^0.4.0",
     "awesome-typescript-loader": "^3.3.0",
-    "serverless": "^1.24.0",
+    "serverless": "^1.24.1",
     "serverless-offline": "^3.16.0",
     "serverless-webpack": "^4.0.0",
     "tslint": "^5.7.0",
@@ -32,7 +32,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "dalamb": "^0.0.3",
+    "dalamb": "^0.1.1",
     "source-map-support": "^0.5.0"
   }
 }
