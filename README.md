@@ -26,7 +26,7 @@ $ sed -i -e 's/serverless-ts-boilerplate/my-service/g' serverless.yml
 Deploy example.
 
 ```
-$ yarn run deploy
+$ yarn run serverless deploy
 ```
 
 Try HTTP request.
@@ -62,7 +62,7 @@ $ yarn run serverless logs --function diceRoll
 Remove resources.
 
 ```
-$ yarn run remove
+$ yarn run serverless remove
 ```
 
 Happy coding!

@@ -4,9 +4,6 @@
   "version": "0.1.0",
   "description": "Boilerplate for TypeScipt + Serverless Framework.",
   "scripts": {
-    "deploy": "serverless deploy",
-    "hello": "serverless invoke --function hello",
-    "remove": "serverless remove"
   },
   "repository": {
     "type": "git",
