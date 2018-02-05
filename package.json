@@ -3,8 +3,7 @@
   "name": "serverless-ts-boilerplate",
   "version": "0.2.0",
   "description": "Boilerplate for TypeScipt + Serverless Framework.",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/y13i/serverless-ts-boilerplate.git"
@@ -20,17 +19,17 @@
   "homepage": "https://github.com/y13i/serverless-ts-boilerplate",
   "devDependencies": {
     "@types/source-map-support": "^0.4.0",
-    "awesome-typescript-loader": "^3.3.0",
-    "serverless": "^1.24.1",
+    "awesome-typescript-loader": "^3.4.1",
+    "serverless": "^1.26.0",
     "serverless-offline": "^3.16.0",
-    "serverless-webpack": "^4.0.0",
-    "tslint": "^5.7.0",
-    "typescript": "^2.6.1",
-    "webpack": "^3.5.5",
+    "serverless-webpack": "^4.2.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.1",
+    "webpack": "^3.10.0",
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "dalamb": "^0.1.1",
-    "source-map-support": "^0.5.0"
+    "dalamb": "^0.2.0",
+    "source-map-support": "^0.5.3"
   }
 }
